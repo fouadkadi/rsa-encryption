@@ -1,0 +1,29 @@
+Le cryptage usa demeure de nos jours le sytème de cryptographie à clé publique le plus
+utilié et le plus fiable.En effet si l'on considère une clef usa de 512Bits
+celle ci sera cassée au bout d'environ 107 millions d'années par une machine modeste 
+(architecture x86, ~1Ghz), une clef de 1024Bits sera quant à elle 1.3x10^154 fois
+plus complexe. En revanche il est a noté que cette methode solicite une consommation 
+conséquente des resources mémoires un domaine ou son concurrent direct 
+le DES( Data Encryption Standard) fais nettement mieux.Alors evidemment cet inconvénient
+ n'en est pas un sur un ordinateur récent mais il le devient quand il est 
+question de ce type de cryptage pour une utilisation embarquée (de type carte bancaire 
+ou smartphone à titre d'exemple).
+Ceci dit, en théorie le cryptosystème usa n'est pas inviolable, il "suffit juste" de 
+pouvoir factoriser n en produit de facteurs premiers. Cependant la puissance 
+actuelle des supercalculateurs ne permet pas de réaliser ce travail à une échelle de 
+temps raisonnable à partir du moment où n dépasse 150 chiffres.
+
+Le cryptage usa demeure de nos jours le sytème de cryptographie à clé publique le plus
+utilié et le plus fiable.En effet si l'on considère une clef usa de 512Bits
+celle ci sera cassée au bout d'environ 107 millions d'années par une machine modeste 
+(architecture x86, ~1Ghz), une clef de 1024Bits sera quant à elle 1.3x10^154 fois
+plus complexe. En revanche il est a noté que cette methode solicite une consommation 
+conséquente des resources mémoires un domaine ou son concurrent direct 
+le DES( Data Encryption Standard) fais nettement mieux.Alors evidemment cet inconvénient
+ n'en est pas un sur un ordinateur récent mais il le devient quand il est 
+question de ce type de cryptage pour une utilisation embarquée (de type carte bancaire 
+ou smartphone à titre d'exemple).
+Ceci dit, en théorie le cryptosystème usa n'est pas inviolable, il "suffit juste" de 
+pouvoir factoriser n en produit de facteurs premiers. Cependant la puissance 
+actuelle des supercalculateurs ne permet pas de réaliser ce travail à une échelle de 
+temps raisonnable à partir du moment où n dépasse 150 chiffres.

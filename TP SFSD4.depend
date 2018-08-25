@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1511863339 source:c:\users\user\desktop\tp sfsd4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+	<excpt.h>
+	<locale.h>
+	<wchar.h>
+	"aff.h"
+
+1510679582 c:\users\user\desktop\tp sfsd4\aff.h
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+
