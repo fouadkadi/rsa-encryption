@@ -112,6 +112,11 @@ void Display(char name[20])
   int x,y,i;
   char *old_locale, *saved_locale;
  f=fopen(name,"r+");
+ if (f==NULL)
+  {
+    puts("erreur d'ouverture");
+    exit(1);
+  }
 
  ///////////////////////////////////////
  ///      pour l'affichage          ///
@@ -121,10 +126,7 @@ void Display(char name[20])
 
 ////////////////////////////////////////
 
- if(f==NULL)puts("Fichier introuvable !");
- else
 
- {
  nb_ll=nb_ln(f);rewind(f);
  nb_mm=nb_m(f);rewind(f);
  nb_chh=nb_ch(f);rewind(f);
@@ -201,7 +203,7 @@ void Display(char name[20])
 
 
 
-    }
+  
 
  }
 
@@ -282,7 +284,11 @@ void Search_Replace(char f_name[20],char mot[25],char rpm[25])
   rename(f_name,"cop.txt");
   f=fopen(f_name,"w+");
   p=fopen("cop.txt","r+");
-  if(p==NULL || f==NULL)puts("Fichier introuvable");
+  if(p==NULL || f==NULL){
+    puts("Fichier introuvable");
+    exit(1);
+  }
+  
 
 
   while(!eof(p))
@@ -527,6 +533,12 @@ chaine M[]={"0010101011100010101000001000011000000000011010111101010101010011001
 //------ Ouverture du fichier source et du fichier destination ----------
 f=fopen(src,"r+");
 q=fopen(dest,"wb+");
+if (f==NULL || q == NULL)
+{
+  puts("erreur d'ouverture");
+  exit(1);
+}
+
 
 
             //--------------------------- Special affichage -------------------------------------------------------
@@ -608,7 +620,11 @@ int cpt=0;
 //   ---- Ouverture du fichier source et du fichier destination -------------
 f=fopen(src,"rb");
 q=fopen(dest,"w+");
-
+if (f==NULL || q == NULL)
+{
+  puts("erreur d'ouverture");
+  exit(1);
+}
 
             //--------------------------- Special affichage -------------------------------------------------------
             srand(time(NULL));
@@ -775,6 +791,11 @@ void menu(void)
             scanf("%s",&dest);
             ////-------- pour l'affichage ----------
             f=fopen(name,"rb");
+            if (f==NULL)
+            {
+              puts("erreur d'ouverture");
+              exit(1);
+            }
             nb_c=Prog(f);
             fclose(f);
             ////------------------------------------
@@ -862,7 +883,7 @@ printf("%c",l[2]);
 
 
 
-  Search_Replace("t.txt",l,"clé");*/
+  Search_Replace("t.txt",l,"clï¿½");*/
 
 
 
